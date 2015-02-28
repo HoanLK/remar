@@ -22,8 +22,8 @@
 
 <!-- Navigation -->
 <div class="row ">
-	<nav class="navbar navbar-default">
-	  <div class="container-fluid">
+	<nav class="navbar navbar-default" >
+	  <div class="container">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
 	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -32,12 +32,12 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <a class="navbar-brand " href="#" style="color: #fff; ">TRANG CHỦ</a>
+	      <!-- <a class="navbar-brand " href="#" style="color: #fff; ">TRANG CHỦ</a> -->
 	    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	      <ul class="nav navbar-nav">
+	      <ul class="nav navbar-nav" >
 
 	        <li><a href="<?php echo base_url().'page/category/'; ?>2" title="Phòng khách">PHÒNG KHÁCH</a></li>
 	        <li><a href="<?php echo base_url().'page/category/'; ?>1" title="Phòng ăn">PHÒNG ĂN</a></li>
@@ -45,11 +45,10 @@
 	        <li><a href="<?php echo base_url().'page/category/'; ?>8" title="Phòng làm việc">PHÒNG LÀM VIỆC</a></li>
 	        <li><a href="<?php echo base_url().'page/category/'; ?>9" title="Bếp">BẾP</a></li>
 	        <li><a href="<?php echo base_url().'page/category/'; ?>10" title="Nội thất rẻ em">TRẺ EM</a></li>
+	        <li><a href="<?php echo base_url().'page/category/'; ?>11" title="Quán Cafe">QUÁN CAFE</a></li>
 	        <li class="dropdown">
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">KHÁC <span class="caret"></span></a>
 	          <ul class="dropdown-menu" role="menu">
-	            <li><a href="<?php echo base_url().'page/category/'; ?>11" title="Quán Cafe">QUÁN CAFE</a></li>
-	            <li class="divider"></li>
 	            <li><a href="<?php echo base_url().'page/category/'; ?>12" title="Tủ">TỦ</a></li>
 	            <li class="divider"></li>
 	            <li><a href="<?php echo base_url().'page/category/'; ?>13" title="Cửa">CỬA</a></li>

@@ -12,7 +12,7 @@
         <div class="navbar-right">
             <ul class="nav navbar-nav">
                 <!-- Thông báo 1-->
-               <!--  <li class="dropdown messages-menu">
+               <li class="dropdown messages-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <i class="fa fa-envelope"></i>
                         <span class="label label-success">4</span>
@@ -23,62 +23,22 @@
                             <ul class="menu">
                                 <li>
                                     <a href="#">
-                                        <div class="pull-left">
-                                            <img src="public/img/avatar3.png" class="img-circle" alt="User Image"/>
-                                        </div>
-                                        <h4>
-                                            Support Team
-                                            <small><i class="fa fa-clock-o"></i> 5 mins</small>
-                                        </h4>
-                                        <p>Why not buy a new awesome theme?</p>
+                                        <h4>1</h4>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <div class="pull-left">
-                                            <img src="public/img/avatar2.png" class="img-circle" alt="user image"/>
-                                        </div>
-                                        <h4>
-                                            AdminLTE Design Team
-                                            <small><i class="fa fa-clock-o"></i> 2 hours</small>
-                                        </h4>
-                                        <p>Why not buy a new awesome theme?</p>
+                                        <h4>1</h4>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <div class="pull-left">
-                                            <img src="public/img/avatar.png" class="img-circle" alt="user image"/>
-                                        </div>
-                                        <h4>
-                                            Developers
-                                            <small><i class="fa fa-clock-o"></i> Today</small>
-                                        </h4>
-                                        <p>Why not buy a new awesome theme?</p>
+                                        <h4>1</h4>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <div class="pull-left">
-                                            <img src="public/img/avatar2.png" class="img-circle" alt="user image"/>
-                                        </div>
-                                        <h4>
-                                            Sales Department
-                                            <small><i class="fa fa-clock-o"></i> Yesterday</small>
-                                        </h4>
-                                        <p>Why not buy a new awesome theme?</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <div class="pull-left">
-                                            <img src="public/img/avatar.png" class="img-circle" alt="user image"/>
-                                        </div>
-                                        <h4>
-                                            Reviewers
-                                            <small><i class="fa fa-clock-o"></i> 2 days</small>
-                                        </h4>
-                                        <p>Why not buy a new awesome theme?</p>
+                                        <h4>1</h4>
                                     </a>
                                 </li>
                             </ul>
@@ -199,7 +159,7 @@
                             <a href="#">View all tasks</a>
                         </li>
                     </ul>
-                </li> -->
+                </li>
                 <!-- End Thông báo 3 -->
 
                 <!-- User Login -->

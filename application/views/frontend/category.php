@@ -10,6 +10,8 @@
 				<p class="text-capitalize"><a href="<?php echo base_url(); ?><?php echo 'page/product/'.$product->id; ?>" title=""><?php echo $product->name; ?></a></p>
 				<p><b>300.000 VNĐ</b></p>
 				<p><a href="<?php echo base_url(); ?><?php echo 'page/product/'.$product->id; ?>" class="btn btn-warning">Chi tiết  <span class="glyphicon glyphicon-play-circle"></span></a></p>
+				<br>
+				<br>
 			</div>
 		<?php endforeach; ?>
 		<?php else: ?>

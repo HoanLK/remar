@@ -24,8 +24,52 @@
                 	<div><b>Vật liệu: </b> Gỗ xà cừ</div><br>
                 	<div><b>Size: </b> D2000 - R16000</div>
                 </div>
+
+                <!-- Thông tin khách hàng -->
                 <div class="panel-footer">
-                	<button type="button" class="btn btn-warning"><b>* Tư vấn - Mua hàng</b></button>
+                	<!-- <button type="button" class="btn btn-warning"><b>* Tư vấn - Mua hàng</b></button> -->
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">
+                      <b>Tư vấn - Mua Hàng</b>
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <form action="" method="post" accept-charset="utf-8" name="formKhachHang">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title text-uppercase" id="myModalLabel">Thông tin khách hàng</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p style="color: red;"><em>Quý khách vui lòng để lại thông tin. <br>Nhân viên tư vấn sẽ liên hệ với Quý khách trong thời gian ngắn nhất.</em></p>
+                                <div class="form-group">
+                                    <label>Tên khách hàng:</label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <i class="glyphicon glyphicon-user"></i>
+                                        </div>
+                                        <input class="form-control" type="text" name="TenKhachHang" required>
+                                    </div><!-- /.input group -->
+                                    <br>
+                                    <label>Số điện thoại khách hàng:</label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-phone"></i>
+                                        </div>
+                                        <input class="form-control" type="text" name="SDTKhachHang" required>
+                                    </div><!-- /.input group -->
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                <button type="submit" class="btn btn-primary" name="submit">Gửi thông tin</button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
                	</div>
             </div>
 		</div>
