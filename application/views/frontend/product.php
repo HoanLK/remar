@@ -50,7 +50,7 @@
                                         <div class="input-group-addon">
                                             <i class="glyphicon glyphicon-user"></i>
                                         </div>
-                                        <input class="form-control" type="text" name="TenKhachHang" required>
+                                        <input class="form-control" type="text" name="name" required>
                                     </div><!-- /.input group -->
                                     <br>
                                     <label>Số điện thoại khách hàng:</label>
@@ -58,7 +58,7 @@
                                         <div class="input-group-addon">
                                             <i class="fa fa-phone"></i>
                                         </div>
-                                        <input class="form-control" type="text" name="SDTKhachHang" required>
+                                        <input class="form-control" type="text" name="phone" required>
                                     </div><!-- /.input group -->
                                 </div>
                             </div>

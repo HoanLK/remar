@@ -12,7 +12,7 @@ class Frontend_Controller extends MY_Controller {
 		$this->load->model('user_m');
 		$this->load->model('category_m');
 		$this->load->model('product_m');
-		$this->load->model('khachhang_m');
+		$this->load->model('customer_m');
 
 		
 	}

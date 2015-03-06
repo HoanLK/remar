@@ -1,3 +1,4 @@
+<?php print_r($errors); ?>
 <section class="content">
     <div class="row">
         <div class="col-xs-12">
@@ -14,6 +15,7 @@
                                 <th>Tên sản phẩm</th>
                                 <th>Loại sản phẩm</th>
                                 <th>Giá</th>
+                                <th>Hình ảnh</th>
                                 <th>Sửa</th>
                                 <th>Xóa</th>
                             </tr>
@@ -24,6 +26,7 @@
                                     <td><?php echo anchor('admin/product/edit/'. $product->id, $product->name); ?></td>
                                     <td><?php $category = $this->category_m->get($product->id_category, true); echo $category?$category->name:null; ?></td>
                                     <td><?php echo $product->gia; ?></td>
+                                    <td><img src="<?php echo base_url().$product->img_truoc; ?>" alt="" class="img-responsive" style="width: 8em; height: 5em;"></td>
                                     <td><?php echo btn_edit('admin/product/edit/'. $product->id); ?></td>
                                     <td><?php echo btn_delete('admin/product/delete/'. $product->id); ?></td>
                                 </tr>
@@ -40,6 +43,7 @@
                                 <th>Tên sản phẩm</th>
                                 <th>Loại sản phẩm</th>
                                 <th>Giá</th>
+                                <th>Hình ảnh</th>
                                 <th>Sửa</th>
                                 <th>Xóa</th>
                             </tr>

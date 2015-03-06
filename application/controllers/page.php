@@ -32,14 +32,14 @@ class Page extends Frontend_Controller {
 			$this->data['product'] = $product;
 		}
 
-		if($this->input->post('TenKhachHang')) {
-			$KhachHang['TenKhachHang'] = $this->input->post('TenKhachHang');
-			$KhachHang['SDTKhachHang'] = $this->input->post('SDTKhachHang');
-			$KhachHang['DaDoc'] = false;
-			$KhachHang['id_product'] = $id;
-			$KhachHang['time'] = date('D, d M Y H:i:s');  
+		if($this->input->post('name')) {
+			$customer['name'] = $this->input->post('name');
+			$customer['phone'] = $this->input->post('phone');
+			$customer['read'] = 0;
+			$customer['id_product'] = $id;
+			$customer['time'] = date('D, d M Y H:i:s');  
 
-			$this->khachhang_m->save($KhachHang);
+			$this->customer_m->save($customer);
 		}
 
 		$this->data['subview'] = 'frontend/product';

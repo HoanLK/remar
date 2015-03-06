@@ -13,7 +13,7 @@ class MY_Model extends CI_Model {
 	}
 	
 
-	public function get($id = NULL, $single = FALSE){
+	public function get($id = NULL, $single = FALSE, $order = 'desc'){
 		
 		if ($id != NULL) {
 			$filter = $this->_primary_filter;
@@ -29,7 +29,7 @@ class MY_Model extends CI_Model {
 		}
 		
 		if (!count($this->db->ar_orderby)) {
-			$this->db->order_by($this->_order_by);
+			$this->db->order_by($this->_order_by, $order);
 		}
 		return $this->db->get($this->_table_name)->$method();
 	}

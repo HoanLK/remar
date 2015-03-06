@@ -5,13 +5,15 @@ class Product extends Admin_Controller {
 	public function __construct()
 	{
 		parent::__construct();
+		$this->load->helper(array('form', 'url'));
 		
 	}
 
 	public function index()
 	{
+
 		$this->data['products'] = $this->product_m->get();
-		
+
 		$this->data['subview'] = 'admin/product/index';
 		$this->load->view('admin/_layout_main', $this->data);
 	}
@@ -33,7 +35,33 @@ class Product extends Admin_Controller {
 			$product['gia'] = $this->input->post('gia');
 			$product['giakm'] = $this->input->post('giakm');
 			$product['description'] = $this->input->post('description');
+
+			$categorie = $this->category_m->get($product['id_category']);
+			$url_img = 'public/images/product/'.$categorie->alias;
+
+
+			$config = array(
+				'upload_path' => './'.$url_img,
+				'allowed_types' => "gif|jpg|png|jpeg|pdf",
+				'overwrite' => TRUE,
+				'max_size' => "2048000", // Can be set to particular file size , here it is 2 MB(2048 Kb)
+				'max_height' => "768",
+				'max_width' => "1024"
+			);
+			
+			$this->load->library('upload', $config);
+			
+			if ( ! $this->upload->do_upload()){
+				$this->data['error'] = array('error' => $this->upload->display_errors());
+			}
+			else{
+				$data_upload = $this->upload->data();
+				$product['img_truoc'] = $url_img.'/'.$data_upload['file_name'];
+			}
+
+
 			$this->product_m->save($product, $id);
+
 			redirect('admin/product');
 		}
 		$this->data['categories'] = $this->category_m->get();
