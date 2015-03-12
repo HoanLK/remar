@@ -7,6 +7,13 @@
     margin-top: 1em;
 }
 
+/*Navi Top*/
+.nav-top{
+    margin-top: 0.4em;
+    font-size: 1.3em;
+    text-align: right;
+}
+
 /*Navigation*/
 .navbar-default{
     background-color: #3393E1;

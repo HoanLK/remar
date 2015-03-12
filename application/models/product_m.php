@@ -25,9 +25,11 @@ class Product_m extends MY_Model {
 		$product = new stdClass();
 		$product->name = '';
 		$product->id_category = '';
-		$product->description = '';
 		$product->gia = '';
-		$product->giakm = '';
+		$product->vat_lieu = '';
+		$product->kich_thuoc = '';
+		$product->mo_ta = '';
+		$product->huong_dan = '';
 		return $product;
 	}
 

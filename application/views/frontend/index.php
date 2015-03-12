@@ -23,14 +23,19 @@
 					</div>
 
 					<div class="container-fluid ">
-						<?php for($i=1; $i<=8; $i++): ?>
-							<div class="col-xs-12 col-sm-4 col-md-3 text-center">
-								<img src="<?php echo base_url(); ?>public/images/product/ghe.jpeg" class="img-responsive center-block" alt="Responsive image">
-								<p class="text-capitalize"><a href="#" title="">Ghế</a></p>
-								<p><b>300.000 VNĐ</b></p>
-								<p><button type="button" class="btn btn-warning">Chi tiết  <span class="glyphicon glyphicon-play-circle"></span></button></p>
-							</div>
-						<?php endfor; ?>
+						<?php foreach($sptbs as $sptb): ?>
+							<?php foreach($sptb as $product): ?>
+								<div class="col-xs-12 col-sm-3 col-md-3 text-center">
+									<a href="<?php echo base_url(); ?><?php echo 'page/product/'.$product->id; ?>" title=""><img src="<?php echo base_url(); ?><?php echo $product->img_truoc; ?>" class="img-responsive center-block" alt="Responsive image" style="width: 15em; height: 12em;"></a>
+									<br>
+									<p class="text-capitalize"><a href="<?php echo base_url(); ?><?php echo 'page/product/'.$product->id; ?>" title=""><?php echo $product->name; ?></a></p>
+									<p><b>300.000 VNĐ</b></p>
+									<p><a href="<?php echo base_url(); ?><?php echo 'page/product/'.$product->id; ?>" class="btn btn-warning">Chi tiết  <span class="glyphicon glyphicon-play-circle"></span></a></p>
+									<br>
+									<br>
+								</div>
+							<?php endforeach; ?>
+						<?php endforeach; ?>
 					</div>
 
 				</div>

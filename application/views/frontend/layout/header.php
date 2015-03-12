@@ -1,13 +1,19 @@
 
 <header class="row">
 	<!-- Logo -->
-	<div class="col-md-6">
-		<h1><a href="<?php echo base_url(); ?>" title="Nội thất Hải Phòng"><img src="<?php echo base_url(); ?>public/images/logo/logo.png" class="img-responsive" alt="Responsive image"></a></h1>
+	<div class="col-md-4">
+		<h1><a href="<?php echo base_url(); ?>" title="Nội thất Hải Phòng"><img src="<?php echo base_url(); ?>public/images/logo/logo.png" class="img-responsive" alt="Responsive image" style="width: 270px; height: 80px;"></a></h1>
 	</div>
 	<!-- End Logo -->
 
+	<!-- Navi Top -->
+	<div class="col-md-4 nav-top" >
+		<a href="<?php echo base_url(); ?>" >Trang chủ</a>   |   <a href="#">Giới thiệu</a>
+	</div>
+	<!-- End Navi Top -->
+
 	<!-- Search -->
-	<div class="col-md-6">
+	<div class="col-md-4">
 		<b style="font-size: 2em;" class="navbar-right">CALL(123) 456-78901</b>
 		<form class="navbar-form navbar-right" role="search">
 	        <div class="form-group">

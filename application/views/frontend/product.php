@@ -20,9 +20,9 @@
                 </div>
                 <br>
                 <div style="margin-left: 1em;">
-                	<div><b>  Giá</b>: <?php echo $product->gia; ?> <b><em>VNĐ</em></b></div> <br>
-                	<div><b>Vật liệu: </b> Gỗ xà cừ</div><br>
-                	<div><b>Size: </b> D2000 - R16000</div>
+                	<div><b>  Giá</b>: <?php echo $product->gia; ?></div> <br>
+                	<div><b>Vật liệu: </b> <?php echo $product->vat_lieu; ?></div><br>
+                	<div><b>Size: </b><?php echo $product->kich_thuoc; ?></div>
                 </div>
 
                 <!-- Thông tin khách hàng -->
@@ -93,12 +93,10 @@
             </div>
             <div class="panel-body">
                 <div class="tab-content">
-                    <div class="tab-pane active" id="tab1">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At</div>
-                    <div class="tab-pane" id="tab2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
-                    <div class="tab-pane" id="tab3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
-                    <div class="tab-pane" id="tab4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
-                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,</div>
+                    <div class="tab-pane active" id="tab1"><?php echo ($product->vat_lieu != null)? $product->vat_lieu : '<em>Chưa có thông tin</em>'; ?></div>
+                    <div class="tab-pane" id="tab2"><?php echo ($product->kich_thuoc != null)? $product->kich_thuoc : '<em>Chưa có thông tin</em>'; ?></div>
+                    <div class="tab-pane" id="tab3"><?php echo ($product->mo_ta != null)? $product->mo_ta : '<em>Chưa có thông tin</em>'; ?></div>
+                    <div class="tab-pane" id="tab4"><?php echo ($product->huong_dan != null)? $product->huong_dan : '<em>Chưa có thông tin</em>'; ?></div>
                 </div>
             </div>
         </div>

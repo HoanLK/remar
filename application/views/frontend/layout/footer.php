@@ -44,7 +44,7 @@
         </div> -->
         <div class="col-md-6">
             <h3>THÔNG TIN LIÊN HỆ</h3>
-			<p><em>Cung cấp sản phẩm CHẤT LƯƠNG NHẤT - giá thành HỢP LÝ NHẤT - phục vụ khách hàng TỐT NHẤT</em></p>
+			<p><em><b>Đảm bảo</b> cung cấp sản phẩm <b>CHẤT LƯƠNG NHẤT</b> - giá thành <b>HỢP LÝ NHẤT</b> - phục vụ khách hàng <b>TỐT NHẤT</b></em></p>
 			<p><b>Số điện thoại: </b> 123-4567890</p>	
 			<p><b>Địa chỉ: </b> .....</p>
 			<p><b>Tải khoản ngân hàng: </b> 123-4567890</p>

@@ -33,10 +33,18 @@ class MY_Model extends CI_Model {
 		}
 		return $this->db->get($this->_table_name)->$method();
 	}
+
+	public function get_limit($limit=null, $offset=null){
+		return $this->db->get($this->_table_name, $limit, $offset)->result();
+	}
 	
 	public function get_by($where, $single = FALSE){
 		$this->db->where($where);
 		return $this->get(NULL, $single);
+	}
+
+	public function get_by_limit($where, $limit=null, $offset=null){
+		return $this->db->get_where($this->_table_name, $where, $limit, $offset)->result();
 	}
 	
 	public function save($data, $id = NULL){

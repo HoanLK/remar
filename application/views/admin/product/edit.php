@@ -29,12 +29,20 @@
                                     <input class="form-control" id="gia" placeholder="Giá" type="text" value="<?php echo $product->gia; ?>" name="gia">
                                 </div>
                                 <div class="form-group">
-                                    <label for="giakm">Giá khuyến mãi</label>
-                                    <input class="form-control" id="giakm" placeholder="Giá khuyến mãi" type="text" value="<?php echo $product->giakm; ?>" name="giakm">
+                                    <label for="vatlieu">Vật liệu</label>
+                                    <input class="form-control" id="vatlieu" placeholder="Vật liệu ..." type="text" value="<?php echo $product->vat_lieu; ?>" name="vat_lieu">    
+                                </div>
+                                <div class="form-group">
+                                    <label for="kichthuoc">Kích thước</label>
+                                    <input class="form-control" id="kichthuoc" placeholder="Kích thước" type="text" value="<?php echo $product->kich_thuoc; ?>" name="kich_thuoc">
                                 </div>
                                 <div class="form-group">
                                     <label>Mô tả sản phẩm</label>
-                                    <textarea class="form-control" rows="3" placeholder="Mô tả ..." name="description"><?php echo $product->description; ?></textarea>
+                                    <textarea class="form-control" rows="3" placeholder="Mô tả ..." name="mo_ta"><?php echo $product->mo_ta; ?></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label>Hướng dẫn</label>
+                                    <textarea class="form-control" rows="3" placeholder="Hướng dẫn ..." name="huong_dan"><?php echo $product->huong_dan; ?></textarea>
                                 </div>
                             </div><!-- /.box-body -->
                             

@@ -12,7 +12,19 @@ class Product extends Admin_Controller {
 	public function index()
 	{
 
-		$this->data['products'] = $this->product_m->get();
+		if($this->input->post('loc')){
+			if($this->input->post('id_category') == '0'){
+				$this->data['products'] = $this->product_m->get();
+			}else{
+				$this->data['products'] = $this->product_m->get_by(array('id_category' => $this->input->post('id_category')));
+			}
+		}else{
+			$this->data['products'] = $this->product_m->get();
+		}
+
+		
+
+		$this->data['categories'] = $this->category_m->get();
 
 		$this->data['subview'] = 'admin/product/index';
 		$this->load->view('admin/_layout_main', $this->data);
@@ -33,8 +45,10 @@ class Product extends Admin_Controller {
 			$product['name'] = $this->input->post('name');
 			$product['id_category'] = $this->input->post('id_category');
 			$product['gia'] = $this->input->post('gia');
-			$product['giakm'] = $this->input->post('giakm');
-			$product['description'] = $this->input->post('description');
+			$product['vat_lieu'] = $this->input->post('vat_lieu');
+			$product['kich_thuoc'] = $this->input->post('kich_thuoc');
+			$product['mo_ta'] = $this->input->post('mo_ta');
+			$product['huong_dan'] = $this->input->post('huong_dan');
 
 			$categorie = $this->category_m->get($product['id_category']);
 			$url_img = 'public/images/product/'.$categorie->alias;

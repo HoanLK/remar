@@ -10,7 +10,19 @@ class Page extends Frontend_Controller {
 
 	public function index()
 	{
-		$this->load->view('frontend/index');
+		$this->data['sptbs']['phongans'] = $this->product_m->get_by_limit(array('id_category' => '1'), 4, 0);
+		$this->data['sptbs']['phongkhachs'] = $this->product_m->get_by_limit(array('id_category' => '2'), 4, 0);
+		$this->data['sptbs']['phongngus'] = $this->product_m->get_by_limit(array('id_category' => '3'), 4, 0);
+		$this->data['sptbs']['phonglamviecs'] = $this->product_m->get_by_limit(array('id_category' => '8'), 4, 0);
+		$this->data['sptbs']['beps'] = $this->product_m->get_by_limit(array('id_category' => '9'), 4, 0);
+		$this->data['sptbs']['treems'] = $this->product_m->get_by_limit(array('id_category' => '10'), 4, 0);
+		$this->data['sptbs']['quancafes'] = $this->product_m->get_by_limit(array('id_category' => '11'), 4, 0);
+		$this->data['sptbs']['tus'] = $this->product_m->get_by_limit(array('id_category' => '12'), 4, 0);
+		$this->data['sptbs']['cuas'] = $this->product_m->get_by_limit(array('id_category' => '13'), 4, 0);
+
+		
+
+		$this->load->view('frontend/index', $this->data);
 	}
 
 	public function category($id=null)
